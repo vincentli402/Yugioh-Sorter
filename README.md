@@ -45,7 +45,7 @@ int bubbleSort(Comparator comp, std::string key);
          This is used for sorting in ascending order.
         - std::greater<int>{} for if the first item is greater than the 2nd
          This is used for sorting in descending order.
-    - Instead of using if a<b or b>a, within the sorting functions you will have if(comp(a,b)). This will then be replaced with either if(a<b or if(a>b) depending on the argument being passed into the function when it is called. 
+    - Instead of using if a < b or b > a, within the sorting functions you will have if(comp(a,b)). This will then be replaced with either if(a < b or if(a > b) depending on the argument being passed into the function when it is called. 
 - Next we have what "key" we are sorting by. In our project the possible keys your sorting functions should account for are atk and def. This means the 4 possible ways of sorting the list are as follows:
     - ascending atk value with function call: bubbleSort(std::less<int>{}, "atk")
     - descending atk value with function call: bubbleSort(std::greater<int>{}, "atk")
